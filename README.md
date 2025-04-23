@@ -5,34 +5,34 @@ Summarize selected text from a web page: The extension sends the selected text t
 Take notes in the browser: Users can save summaries or other notes directly within the extension, using local storage for persistence.
 
 To run this project:
+
 Backend (Spring Boot):
-Clone the repository:
+1. Clone the repository:
 git clone 
 
-Navigate to the backend directory:
+2. Navigate to the backend directory:
 cd backend
 
-Install Dependencies:
+3. Install Dependencies:
 mvn clean install
 
-Update Application Properties:
+4. Update Application Properties:
 Open resources/application.properties.
-
 Replace Google Gemini API URL.
-
 Replace with your own Google Gemini API key (obtain one for free from the Google AI Studio).
 
-Run the Server:
+5. Run the Server:
 mvn spring-boot:run
 
 Frontend (Chrome Extension):
-Clone the repository (if not already done):
+
+6. Clone the repository (if not already done):
 git clone 
 
-Open the frontend directory in Visual Studio Code:
+7. Open the frontend directory in Visual Studio Code:
 code frontend
 
-Load Unpacked Extension:
+8. Load Unpacked Extension:
 Go to Chrome's Extensions page (chrome://extensions).
 Click "Load unpacked".
 Select the frontend directory.
@@ -46,8 +46,3 @@ The Gemini API generates a summary, which is returned to the backend.
 The backend sends the summary back to the extension.
 The extension displays the summary in the results pane.
 Saved notes are stored in local storage using chrome.storage.local.
-
-Technologies Used:
-Backend: Java, Spring Boot, Spring WebClient, Lombok, Spring AI
-Frontend: HTML, CSS, JavaScript, Fetch API
-
